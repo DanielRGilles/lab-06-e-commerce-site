@@ -1,7 +1,7 @@
 export const beans = [
     {
         id: '0',
-        name: 'Scarlet runner bean',
+        name: 'Scarlet runner',
         image: 'scarletr.jfif',
         type: 'a large pole variety',
         price:  3,
@@ -14,7 +14,7 @@ export const beans = [
         name: 'Appaloosa',
         image: 'appalb.jfif',
         type: 'a medium hybrid variety',
-        price:  3,
+        price:  4,
         germination: '8 to 10'
 
 
@@ -34,17 +34,17 @@ export const beans = [
         name: 'Borlotti bean',
         image: 'borlb.jfif',
         type: 'a medium bush variety',
-        price:  3,
+        price:  5,
         germination: '5 to 10'
 
 
     }, 
     {
         id: '4',
-        name: 'Christmas Lima bean',
+        name: 'Christmas Lima',
         image: 'xmaslima.jfif',
         type: 'a large bush variety',
-        price:  3,
+        price:  2,
         germination: '8 to 16'
 
 

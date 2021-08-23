@@ -28,6 +28,9 @@ export function renderProduct(beans) {
     
     button.classList.add('btn-crt');
     button.textContent = 'Add to cart';
+    button.addEventListener('click', () => {
+        alert(`you clicked ${beans.name}`);
+    });
 
     return li;
 }
