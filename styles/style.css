@@ -13,13 +13,14 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
+    --header-height: 85px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: lightgreen;
+    border: solid 3px green;
 }
 
 main {
@@ -28,29 +29,32 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    border: solid 5px green;
 }
 
 section {
-    background-color: var(--color5);
+    /* background-color: var(--color5); */
     width: 1000px;
     max-width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
+    /* padding-top: var(--gutter);
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
+    margin-bottom: var(--gutter); */
     border: solid 2px var(--color1);
 }
 
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: green;
     height: var(--header-height);
     box-shadow: var(--shadow);
+    margin-top: 0;
+    border-top: solid 15px green;
 }
 
 footer {
@@ -68,10 +72,12 @@ h2 {
 
 .gutter-right {
     margin-right: 20px;
+    text-align: center;
 }
 
 .main-logo {
-    animation: pulse 5s infinite ease-in-out;
+    animation: pulse 8s infinite ease-in-out;
+    border-radius: 15px;
 }
 
 header img {

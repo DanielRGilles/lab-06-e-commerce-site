@@ -1,1 +1,43 @@
 /* add home page styles here */
+
+#bean-stalk {
+    position: absolute;
+    right: 1%;
+    height: 8%;
+    width: 6%;
+    top: 13px;
+    border: solid 2px green;
+}
+
+.title {
+    margin-top: 40px;
+    text-align: center;
+    left: 0;
+    margin-right: 35%;
+}
+
+.beans {
+    border: solid 2px black;
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+    margin-left: 5px;
+    font-size: auto;
+    height: 475px;
+    width: 180px;
+
+}
+
+.bbf {
+    width: 150px;
+    height: 150px;
+}
+
+ul {
+    margin-top: 5%;
+    display: flex;
+    height: 15%;
+    /* width: 50%; */
+    margin-left: 5px;
+}
