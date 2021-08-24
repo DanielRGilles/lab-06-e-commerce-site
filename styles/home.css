@@ -3,17 +3,19 @@
 #bean-stalk {
     position: absolute;
     right: 1%;
-    height: 8%;
+    height: 9%;
     width: 6%;
     top: 13px;
     border: solid 2px green;
 }
 
 .title {
-    margin-top: 40px;
+    margin-top: 15px;
     text-align: center;
+    align-items: center;
     left: 0;
-    margin-right: 35%;
+    color: honeydew;
+    
 }
 
 .beans {
@@ -38,6 +40,6 @@ ul {
     margin-top: 5%;
     display: flex;
     height: 15%;
-    /* width: 50%; */
     margin-left: 5px;
 }
+
