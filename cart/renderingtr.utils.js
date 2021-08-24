@@ -19,16 +19,17 @@ export function rendertbr(itemCart){
     return tr;
 }
 
-function getTotal(price, quantity) {
+export function getTotal(price, quantity) {
     const total = price * quantity;
     return total;
 }
 
-export function getWholeTotal(someArray){
+export function getWholeTotal(allP, wholeC){
     let acculumator = 0;
-    
-    for (let num of someArray) {
-        acculumator += Number(num);
+    for (let item of wholeC) {
+        const product = findById(allP, item.id);
+        const total = product.price * item.quantity;    
+        acculumator = acculumator + total;
     }
-    return acculumator;
+    return acculumator.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 }    
