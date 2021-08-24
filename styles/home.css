@@ -71,3 +71,6 @@ td {
     transition: ease-in 750ms;
     
 }
+tfoot {
+    text-align: center;
+}

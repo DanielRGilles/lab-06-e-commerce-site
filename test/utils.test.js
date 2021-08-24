@@ -1,7 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 import { renderProduct } from '../render-utils.js';
-import { beans } from '../products/data.js';
 const test = QUnit.test;
 
 test('passing in the object data and comparing to what we have hard coded onto the page', (expect) => {
@@ -18,7 +17,6 @@ test('passing in the object data and comparing to what we have hard coded onto t
         type: 'a large pole variety',
         price:  3,
         germination: '7 to 14'
-
 
     });
 
