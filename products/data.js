@@ -7,7 +7,6 @@ export const beans = [
         price:  3,
         germination: '7 to 14'
 
-
     },
     {
         id: 1,
@@ -49,6 +48,5 @@ export const beans = [
 
 
     }
-
 
 ];

@@ -7,4 +7,3 @@ for (let bean of beans) {
     const liItem = renderProduct(bean);
     ulEL.append(liItem);
 }
-

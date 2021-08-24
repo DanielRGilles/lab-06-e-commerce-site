@@ -32,7 +32,6 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
-
 }
 
 section {
@@ -54,7 +53,6 @@ header {
     margin-top: 0;
     border: solid 1px black;
     margin-bottom: 10px;
-   
 }
 
 footer {
@@ -63,7 +61,6 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-
 
 h2 {
     font-size: 1.8rem;
@@ -82,7 +79,6 @@ h2 {
     margin-top: 5px;
     animation: inBigify 4s infinite ease-in-out;
 }
-
 
 header img {
     height: var(--header-height);
@@ -119,5 +115,4 @@ footer {
       80% {
           transform: scale(1);
       }
-    
   }

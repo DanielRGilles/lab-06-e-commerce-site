@@ -1,13 +1,10 @@
 /* add home page styles here */
-
-
 .title {
     margin-top: 15px;
     text-align: center;
     align-items: center;
     left: 0;
     color: honeydew;
-    
 }
 
 .beans {
@@ -43,6 +40,7 @@ ul {
     font-size: 2rem;
     color: white;
 }
+
 table {
     border: solid 3px black;
     background-color: rgba(1, 1, 1, .3);
@@ -52,12 +50,15 @@ table {
     font-size: 2rem;
     font-weight: bold;
 }
+
 td {
     border: solid 2px white;
 }
+
 #cart-total {
     background-color: rgba(1, 1, 1, .4);
 }
+
 .btn-chck {
     margin-top: 2%;
     width: 150px;
@@ -66,11 +67,13 @@ td {
     cursor: pointer;
     border: solid 2px black;
 }
+
 .btn-chck:hover {
     background-color: gray;
     transition: ease-in 750ms;
     
 }
+
 tfoot {
     text-align: center;
 }
