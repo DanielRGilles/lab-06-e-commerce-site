@@ -1,6 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 import { renderProduct } from '../render-utils.js';
+import { beans } from '../products/data.js';
 const test = QUnit.test;
 
 test('passing in the object data and comparing to what we have hard coded onto the page', (expect) => {
@@ -10,7 +11,7 @@ test('passing in the object data and comparing to what we have hard coded onto t
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = renderProduct({
+    const actual = renderProduct(beans)({
         id: '0',
         name: 'Scarlet runner',
         image: 'scarletr.jfif',

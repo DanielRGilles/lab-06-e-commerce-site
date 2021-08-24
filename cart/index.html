@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="title">
+            Shopping Cart
+        </h2>
+        <div class="gutter-right logo">
+
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <a href="../index.html" title="Home"><img class="main-logo" src="../assets/mrbean.png" /></a>
+
+            <div class="product-link"><a href="./products/index.html"></a></div>
+        </section>
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Scarlet runner</td>
+                    <td>$3.00</td>
+                    <td>3</td>
+                    <td>$9.00</td>
+                </tr>
+                <tr>
+                    <td>Appaloosa</td>
+                    <td>$4.00</td>
+                    <td>4</td>
+                    <td>$16.00</td>
+                </tr>
+                <tr>
+                    <td>Vaquero bean</td>
+                    <td>$3.00</td>
+                    <td>4</td>
+                    <td>$12.00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Amount Owed</td>
+                    <td id="cart-total">$37.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class='btn-chck' id="check-out">Checkout</button>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

@@ -22,7 +22,7 @@ export function renderProduct(beans) {
 
     
     price.classList.add('price');
-    price.textContent = `$${beans.price.toFixed(2)} for 20 beans`;
+    price.textContent = `$${beans.price} for 20 beans`;
     
     
     
