@@ -11,7 +11,7 @@ test('passing in the object data and comparing to what we have hard coded onto t
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = renderProduct(beans)({
+    const actual = renderProduct({
         id: '0',
         name: 'Scarlet runner',
         image: 'scarletr.jfif',
@@ -24,5 +24,5 @@ test('passing in the object data and comparing to what we have hard coded onto t
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(actual.outerHTML, expected);
 });
