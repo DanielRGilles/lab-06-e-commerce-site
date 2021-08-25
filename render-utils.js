@@ -1,3 +1,4 @@
+import { addItemToCart, setCart } from './utils.js';
 export function renderProduct(beans) {
     const li = document.createElement('li');
     const name = document.createElement('h3');
@@ -25,7 +26,8 @@ export function renderProduct(beans) {
     button.textContent = 'Add to cart';
     
     button.addEventListener('click', () => {
-        alert(`you clicked ${beans.name}`);
+        addItemToCart(beans.id);
+        
     });
     return li;
 }

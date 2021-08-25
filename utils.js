@@ -8,10 +8,11 @@ export function findById(myArray, id) {
         }
     }
 }
-const CART = 'CART';
+
 export function getCart(){
 // grabs the CART in local storage
-    const stringyItems = localStorage.getItem(CART);
+// const CART = 'CART';
+    const stringyItems = localStorage.getItem('CART');
     if (!stringyItems) {
         return [];
     }
@@ -23,20 +24,21 @@ export function getCart(){
 export function setCart(myArray){
     const stringyArray = JSON.stringify(myArray);
     // takes the array and makes it a string
-    localStorage.setItem(CART, stringyArray);
+    localStorage.setItem('CART', stringyArray);
     // puts the stringy array in local storage with key=Cart and value = to stringArray
 }
 
 export function addItemToCart(idOfItem){
     const cart = getCart();
-    const product = findById(cart, idOfItem);
-    if (product) {
-        product.quantity++;
+    const productInC = findById(cart, idOfItem);
+    
+    if (productInC) {
+        productInC.quantity++;
     } else {
         const addNewItem = { id: idOfItem, quantity: 1 };
         cart.push(addNewItem);
     }
-
+    setCart(cart);
 }
 
 export function clearCart(){
