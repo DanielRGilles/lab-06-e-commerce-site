@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
 import { renderProduct } from '../render-utils.js';
 import { beans } from './data.js';
+import { getCart, setCart, addItemToCart } from '../utils.js';
 const ulEL = document.getElementById('bean-go-here');
 // initialize global state
 for (let bean of beans) {
