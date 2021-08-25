@@ -8,5 +8,5 @@ for (let bean of beans) {
     const liItem = renderProduct(bean);
     ulEL.append(liItem);
 }
-const toLocal = setCart(beans);
-console.log(toLocal);
+// const toLocal = setCart(beans);
+// console.log(toLocal);
