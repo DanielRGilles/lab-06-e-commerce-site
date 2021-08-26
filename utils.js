@@ -38,7 +38,8 @@ export function addItemToCart(idOfItem){
         const addNewItem = { id: idOfItem, quantity: 1 };
         cart.push(addNewItem);
     }
-    setCart(cart);
+    setCart(cart); 
+    
 }
 
 export function clearCart() {

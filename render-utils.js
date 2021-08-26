@@ -1,4 +1,6 @@
-import { addItemToCart, setCart } from './utils.js';
+import { addItemToCart } from './utils.js';
+
+
 export function renderProduct(beans) {
     const li = document.createElement('li');
     const name = document.createElement('h3');
@@ -6,6 +8,7 @@ export function renderProduct(beans) {
     const image = document.createElement('img');
     const price = document.createElement('p');
     const button = document.createElement('button');
+    
     
     li.append(name, type, image, price, button);
     li.classList.add('beans');
@@ -27,7 +30,7 @@ export function renderProduct(beans) {
     
     button.addEventListener('click', () => {
         addItemToCart(beans.id);
-        
+        location.reload();
     });
     return li;
 }

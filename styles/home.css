@@ -5,6 +5,7 @@
     align-items: center;
     left: 0;
     color: honeydew;
+    padding-bottom: 5px;
 }
 
 .beans {
@@ -21,7 +22,6 @@
     background-color: rgba(12, 12, 12, .5);
     color: white;
     padding-left: 0;
-
 }
 
 .bbf {
@@ -36,9 +36,10 @@ ul {
 
 .cart-button {
     position: fixed;
-    right: 5%;
-    font-size: 2rem;
-    color: white;
+    right: 2%;
+    font-size: 1.5rem;
+    color: rgb(252, 233, 233);
+    background-color: rgba(20, 19, 19, 0.6);
 }
 
 table {
