@@ -1,4 +1,8 @@
 /* add home page styles here */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,800;0,900;1,700&display=swap');
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
 .title {
     margin-top: 15px;
     text-align: center;
@@ -6,6 +10,7 @@
     left: 0;
     color: honeydew;
     padding-bottom: 5px;
+    font-size: 30px;
 }
 
 .beans {
@@ -77,4 +82,13 @@ td {
 
 tfoot {
     text-align: center;
+}
+a {
+    text-decoration: none;
+}
+#clr-cart {
+    width: 100;
+    height: 40px;
+    border-radius: 20px;
+
 }
