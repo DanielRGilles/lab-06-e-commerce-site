@@ -18,7 +18,7 @@ export function renderProduct(beans) {
     name.textContent = beans.name;
    
     image.classList.add('bbf');
-    image.src = `../assets/${beans.image}`;
+    image.src = beans.image;
        
     type.classList.add('beanography');
     type.textContent = beans.type;

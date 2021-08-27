@@ -1,8 +1,6 @@
 import { addItemToProduct } from '../utils.js';
 const form = document.getElementById('new-product');
 
-console.log(form);
-
 // how do we get the data out of our form?
 form.addEventListener('submit', (event) => {
 // this prevents the storage of data in query parameters in the URL, and also prevents the refreshing of the page
