@@ -1,19 +1,16 @@
 /* add home page styles here */
-
-#bean-stalk {
-    position: absolute;
-    right: 1%;
-    height: 8%;
-    width: 6%;
-    top: 13px;
-    border: solid 2px green;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,800;0,900;1,700&display=swap');
+* {
+    font-family: 'Fira Sans', sans-serif;
 }
-
 .title {
-    margin-top: 40px;
+    margin-top: 15px;
     text-align: center;
+    align-items: center;
     left: 0;
-    margin-right: 35%;
+    color: honeydew;
+    padding-bottom: 5px;
+    font-size: 30px;
 }
 
 .beans {
@@ -22,11 +19,14 @@
     padding: 5px;
     text-align: center;
     font-weight: 700;
-    margin-left: 5px;
+    justify-content: space-around;
+    align-items: center;
     font-size: auto;
     height: 475px;
     width: 180px;
-
+    background-color: rgba(12, 12, 12, .5);
+    color: white;
+    padding-left: 0;
 }
 
 .bbf {
@@ -37,7 +37,77 @@
 ul {
     margin-top: 5%;
     display: flex;
-    height: 15%;
-    /* width: 50%; */
-    margin-left: 5px;
+}
+
+.cart-button {
+    position: fixed;
+    right: 2%;
+    font-size: 1.5rem;
+    color: rgb(252, 233, 233);
+    background-color: rgba(20, 19, 19, 0.6);
+}
+
+table {
+    border: solid 3px black;
+    background-color: rgba(1, 1, 1, .3);
+    color: ivory;
+    margin-top: 5%;
+    width: 25%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+td {
+    border: solid 2px white;
+}
+
+#cart-total {
+    background-color: rgba(1, 1, 1, .4);
+}
+
+.btn-chck {
+    margin-top: 2%;
+    width: 150px;
+    height: 60px;
+    border-radius: 13px;
+    cursor: pointer;
+    border: solid 2px black;
+}
+
+.btn-chck:hover {
+    background-color: gray;
+    transition: ease-in 750ms;
+    
+}
+
+tfoot {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+#clr-cart {
+    width: 100;
+    height: 40px;
+    border-radius: 20px;
+
+}
+#new-product {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: flex-end;
+    border: solid 2px black;
+    border-radius: 5px;
+    background-color: rgba(100, 100, 100, .6);
+    color: ivory;
+    
+}
+label {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+form > button {
+    margin: 10px 10px 10px auto;
 }

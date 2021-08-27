@@ -9,3 +9,13 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+## HTML Setup for Cart page
+1) link home page to cart page.
+2) hard code a table for cart page.
+## JS Functions
+3) TDD a function to render said table.
+4) Once function is passing tests add to renderingtr.utils.js and link to cart.js
+5) hard code cart-data.js with id and quantity
+6) import cart-data to cart.js
+7) in cart.js use a get total function and a for loop to create totals for table.
+8) use another function to add table-totals together and inject that into a td for cart total
