@@ -6,7 +6,7 @@ const test = QUnit.test;
 test('passing in the object data and comparing to what we have hard coded onto the page', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<li class="beans"><h3 class="bname">Scarlet runner</h3><p class="beanography">a large pole variety</p><img class="bbf" src="../assets/scarletr.jfif"><p class="price">$3.00 for 20 beans</p><button class="btn-crt">Add to cart</button></li>`;
+    const expected = `<li class="beans"><h3 class="bname">Scarlet runner</h3><p class="beanography">a large pole variety</p><img class="bbf" src="scarletr.jfif"><p class="price">$3 for 20 beans</p><button class="btn-crt">Add to cart</button></li>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
