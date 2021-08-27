@@ -111,3 +111,9 @@ label {
 form > button {
     margin: 10px 10px 10px auto;
 }
+.admin-link {
+    position: fixed;
+    left: 1%;
+    top: 2%;
+    color: white;
+}

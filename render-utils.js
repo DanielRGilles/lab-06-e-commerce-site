@@ -1,4 +1,5 @@
 import { addItemToCart } from './utils.js';
+// import { beans } from './products/data.js';
 
 
 export function renderProduct(beans) {
@@ -17,13 +18,13 @@ export function renderProduct(beans) {
     name.textContent = beans.name;
    
     image.classList.add('bbf');
-    image.src = `../assets/${beans.image}`;
+    image.src = beans.image;
        
     type.classList.add('beanography');
     type.textContent = beans.type;
     
     price.classList.add('price');
-    price.textContent = `$${beans.price.toFixed(2)} for 20 beans`;
+    price.textContent = `$${beans.price} for 20 beans`;
     
     button.classList.add('btn-crt');
     button.textContent = 'Add to cart';
