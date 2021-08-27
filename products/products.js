@@ -7,6 +7,7 @@ const cartTotal = getCart();
 const crtDEl = document.getElementById('cart-dollars');
 const ulEL = document.getElementById('bean-go-here');
 const total = getWholeTotal(beans, cartTotal);
+
 let dolla = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 crtDEl.textContent = `(${dolla})Cart`;
 const clrCart = document.getElementById('clr-cart');
