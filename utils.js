@@ -1,3 +1,4 @@
+import { beans } from './products/data.js';
 export function findById(myArray, id) {
     // loop through the array
     for (let item of myArray) {
@@ -21,12 +22,12 @@ export function getCart(){
     const unstringyItems = JSON.parse(stringyItems);
     return unstringyItems;
 }
+
 export function getProduct(){
     // grabs the Product in local storage
-    
     const stringyItems = localStorage.getItem(PRODUCT);
     if (!stringyItems) {        
-        return [];
+        return beans ;
     }
     // parse the cart
     const unstringyItems = JSON.parse(stringyItems);
@@ -62,16 +63,8 @@ export function addItemToCart(idOfItem){
 
 export function addItemToProduct(idOfItem){
     const product = getProduct();
-    const productInC = findById(product, idOfItem);
-    
-    if (productInC) {
-        productInC.quantity++;
-    } else {
-        const addNewItem = { id: idOfItem, quantity: 1 };
-        product.push(addNewItem);
-    }
+    product.push(idOfItem);
     setProduct(product); 
-    
 }
 
 export function clearCart() {
@@ -80,11 +73,9 @@ export function clearCart() {
     const stringyCart = JSON.stringify(cart, true, 2);
     
     alert(stringyCart);
-
    
     localStorage.removeItem(CART);
 
-   
     window.location = '../index.html';
 }
 
